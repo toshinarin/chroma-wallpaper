@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Color Wallpaper Generator</title>
+    <meta name="description" content="Generate high-quality plain color wallpapers with custom dimensions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <div class="glass-card">
+            <h1>Color Wallpaper</h1>
+            <p class="subtitle">Create your perfect plain background</p>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label for="colorPicker">Color</label>
+                    <div class="color-input-wrapper">
+                        <input type="color" id="colorPicker" value="#6B73FF">
+                        <input type="text" id="colorHex" value="#6B73FF" spellcheck="false">
+                    </div>
+                </div>
+
+                <div class="dimensions-group">
+                    <div class="control-group">
+                        <label for="widthInput">Width (px)</label>
+                        <input type="number" id="widthInput" value="1920" min="1">
+                    </div>
+                    <div class="control-group">
+                        <label for="heightInput">Height (px)</label>
+                        <input type="number" id="heightInput" value="1080" min="1">
+                    </div>
+                </div>
+
+                <div class="presets">
+                    <span>Presets:</span>
+                    <button class="preset-btn" id="deviceSizeBtn">Use Device Size</button>
+                    <button class="preset-btn" data-w="1920" data-h="1080">FHD</button>
+                    <button class="preset-btn" data-w="3840" data-h="2160">4K</button>
+                    <button class="preset-btn" data-w="1080" data-h="1920">Mobile</button>
+                </div>
+
+                <button id="downloadBtn" class="primary-btn">
+                    <span>Download Wallpaper</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="preview-container">
+            <div class="glass-card preview-card">
+                <h2>Preview</h2>
+                <div id="previewArea" class="preview-area"></div>
+                <div class="preview-info">
+                    <span id="previewSize">1920 x 1080</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
