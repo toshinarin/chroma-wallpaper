@@ -120,6 +120,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Color Catalog Logic
     const categoryTabs = document.getElementById('categoryTabs');
     const catalogGrid = document.getElementById('catalogGrid');
+    const catalogModal = document.getElementById('catalogModal');
+    const openCatalogBtn = document.getElementById('openCatalogBtn');
+    const closeModalBtn = document.querySelector('.close-modal');
+
+    // Modal Event Listeners
+    openCatalogBtn.addEventListener('click', () => {
+        catalogModal.classList.add('open');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        catalogModal.classList.remove('open');
+    });
+
+    catalogModal.addEventListener('click', (e) => {
+        if (e.target === catalogModal) {
+            catalogModal.classList.remove('open');
+        }
+    });
 
     // Determine language (default to en, switch to ja if browser is ja)
     const lang = navigator.language.startsWith('ja') ? 'ja' : 'en';
@@ -184,7 +202,8 @@ document.addEventListener('DOMContentLoaded', () => {
         colorHex.value = hex;
         updatePreview();
 
-        // Scroll to top smoothly
+        // Close modal and scroll to top
+        catalogModal.classList.remove('open');
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 });

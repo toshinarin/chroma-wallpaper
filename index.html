@@ -69,6 +69,10 @@
                         <line x1="12" y1="15" x2="12" y2="3" />
                     </svg>
                 </button>
+
+                <button id="openCatalogBtn" class="secondary-btn">
+                    <span>Open Color Catalog</span>
+                </button>
             </div>
         </div>
 
@@ -82,14 +86,20 @@
             </div>
         </div>
 
-        <div class="glass-card catalog-card">
-            <h2>Color Catalog</h2>
-            <div class="tabs" id="categoryTabs">
-                <!-- Tabs will be injected here -->
-            </div>
-            <div class="catalog-grid" id="catalogGrid">
-                <!-- Color cards will be injected here -->
-                <div class="loading-spinner">Loading colors...</div>
+        <!-- Catalog Modal -->
+        <div id="catalogModal" class="modal">
+            <div class="glass-card modal-content">
+                <div class="modal-header">
+                    <h2>Color Catalog</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="tabs" id="categoryTabs">
+                    <!-- Tabs will be injected here -->
+                </div>
+                <div class="catalog-grid" id="catalogGrid">
+                    <!-- Color cards will be injected here -->
+                    <div class="loading-spinner">Loading colors...</div>
+                </div>
             </div>
         </div>
     </main>
