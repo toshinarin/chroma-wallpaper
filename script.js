@@ -8,10 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const presetBtns = document.querySelectorAll('.preset-btn');
 
     // State
+    const ratio = window.devicePixelRatio || 1;
+    const defaultW = Math.floor(window.screen.width * ratio);
+    const defaultH = Math.floor(window.screen.height * ratio);
+
+    // Set default values to inputs
+    widthInput.value = defaultW;
+    heightInput.value = defaultH;
+
     let state = {
         color: colorPicker.value,
-        width: parseInt(widthInput.value),
-        height: parseInt(heightInput.value)
+        width: defaultW,
+        height: defaultH
     };
 
     // Initialize
