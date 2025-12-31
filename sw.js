@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chroma-wallpaper-v2';
+const CACHE_NAME = 'chroma-wallpaper-v3';
 const ASSETS = [
     './',
     './index.html',
