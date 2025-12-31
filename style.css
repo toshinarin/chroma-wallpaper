@@ -208,10 +208,14 @@ input[type="color"]::-webkit-color-swatch {
 .dimensions-group {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
 }
 
 .dimensions-group .control-group {
     flex: 1;
+    min-width: 140px;
+    /* Ensure inputs don't get too small */
 }
 
 .presets {
