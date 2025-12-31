@@ -5,41 +5,52 @@
 ## Features
 
 - **🎨 Custom Color Selection**: precise control with a color picker and HEX code input.
-- **📏 Custom Dimensions**: Set any width and height for your wallpaper.
+- **🎨 Color Catalog**: Browse a curated selection of colors powered by `colors.json`, complete with names and mood descriptions.
+- **📱 PWA Support**: Installable on Android and iOS devices. Works offline!
 - **🖥️ Auto-Detect Device Size**: One-click configuration to match your screen's resolution perfectly.
-  - **Retina/High-DPI Support**: Correctly renders physical pixels on high-resolution displays (e.g., MacBooks, 4K monitors).
-- **⚡ Quick Presets**: Ready-to-use sizes for FHD, 4K, and Mobile.
+- **📏 Custom Dimensions**: Set any width and height for your wallpaper.
+- **⚡ Quick Presets**: One-tap configuration for FHD, 4K, and Mobile resolutions.
 - **✨ UI**: Beautiful, responsive interface with smooth animations and glassmorphism effects.
 - **📥 Instant Download**: Generates PNG images locally in your browser.
 
 ## How to Use
 
-1.  **Select a Color**: Use the color wheel or type a HEX code (e.g., `#6B73FF`).
+1.  **Select a Color**: 
+    - Use the color picker or HEX input.
+    - Or click **"Open Color Catalog"** to browse categorized recommendations.
 2.  **Set Size**:
-    *   Enter custom width/height.
-    *   Choose a preset (FHD/4K/Mobile).
-    *   Click **"Use Device Size"** to match your current screen instantly.
-3.  **Preview**: See the result in real-time.
-4.  **Download**: Click the button to save your new wallpaper.
+    - The app automatically detects your screen size on load.
+    - You can also manually type dimensions or use the preset buttons.
+3.  **Download**: Click **"Download Wallpaper"** to save your PNG.
 
-## Setup
+## Installation (PWA)
 
-Simply open `index.html` in any modern web browser. No installation or server required.
+- **Android**: Tap "Add to Home Screen" when prompted, or select it from the browser menu.
+- **iOS**: Tap the Share button -> "Add to Home Screen".
 
-```bash
-# Clone the repository
-git clone https://github.com/toshinarin/chroma-wallpaper.git
+## Setup for Developers
 
-# Open the project
-cd chroma-wallpaper
-open index.html
-```
+No build step required! This is a vanilla HTML/CSS/JS project.
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/toshinarin/chroma-wallpaper.git
+    cd chroma-wallpaper
+    ```
+
+2.  **Run locally**:
+    Because modern browsers restrict `fetch` from local files (for `colors.json`), you need a local server:
+    ```bash
+    python3 -m http.server 8080
+    # Then open http://localhost:8080
+    ```
 
 ## Technologies
 
 - HTML5
-- CSS3 (Variables, Flexbox, Glassmorphism)
-- Vanilla JavaScript (Canvas API)
+- CSS3 (Variables, Flexbox, Grid, Glassmorphism)
+- Vanilla JavaScript (Canvas API, Fetch API)
+- PWA (Manifest, Service Worker)
 
 ## License
 
