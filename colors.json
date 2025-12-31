@@ -1,0 +1,252 @@
+{
+  "structure": {
+    "categories": [
+      {
+        "id": "nature_serenity",
+        "colors": [
+          { "id": "sky_blue", "hex": "#87CEEB" },
+          { "id": "midnight_blue", "hex": "#191970" },
+          { "id": "emerald_green", "hex": "#50C878" },
+          { "id": "sage_green", "hex": "#9DC183" },
+          { "id": "teal", "hex": "#008080" }
+        ]
+      },
+      {
+        "id": "warmth_energy",
+        "colors": [
+          { "id": "coral", "hex": "#FF7F50" },
+          { "id": "sunset_orange", "hex": "#FD5E53" },
+          { "id": "cherry_blossom", "hex": "#FFB7C5" },
+          { "id": "mustard", "hex": "#FFDB58" },
+          { "id": "terracotta", "hex": "#E2725B" }
+        ]
+      },
+      {
+        "id": "elegance_mystery",
+        "colors": [
+          { "id": "royal_purple", "hex": "#7851A9" },
+          { "id": "lavender", "hex": "#E6E6FA" },
+          { "id": "champagne", "hex": "#F7E7CE" },
+          { "id": "crimson", "hex": "#DC143C" },
+          { "id": "indigo", "hex": "#4B0082" }
+        ]
+      },
+      {
+        "id": "modern_nuance",
+        "colors": [
+          { "id": "charcoal_gray", "hex": "#36454F" },
+          { "id": "robin_egg_blue", "hex": "#0ABAB5" },
+          { "id": "sand_beige", "hex": "#F5F5DC" },
+          { "id": "slate_blue", "hex": "#6A5ACD" },
+          { "id": "peach_fuzz", "hex": "#FFBE98" }
+        ]
+      }
+    ]
+  },
+  "content": {
+    "ja": {
+      "categories": {
+        "nature_serenity": {
+          "name": "自然・癒やし・静寂",
+          "description": "海や空、植物など、生存に不可欠な要素を連想させるため、本能的に好まれる色です。"
+        },
+        "warmth_energy": {
+          "name": "温かみ・幸福感・エネルギー",
+          "description": "太陽や果実、花を連想させ、ポジティブな感情を引き出します。"
+        },
+        "elegance_mystery": {
+          "name": "上品・神秘・高貴",
+          "description": "歴史的に貴重であった色や、非日常を感じさせる色は「美」として認識されやすいです。"
+        },
+        "modern_nuance": {
+          "name": "モダン・洗練・ニュアンス",
+          "description": "現代のデザインで特に好まれる、シンプルでありながら深みのある色です。"
+        }
+      },
+      "colors": {
+        "sky_blue": {
+          "name": "スカイブルー",
+          "reason": "晴れた空の色。開放感と自由を感じさせ、ストレスを軽減する心理効果がある。"
+        },
+        "midnight_blue": {
+          "name": "ミッドナイトブルー",
+          "reason": "真夜中の深い空や海の色。静寂と知性、精神的な落ち着きをもたらす。"
+        },
+        "emerald_green": {
+          "name": "エメラルドグリーン",
+          "reason": "宝石や豊かな森林の色。生命力と再生を象徴し、目に優しくリラックス効果が高い。"
+        },
+        "sage_green": {
+          "name": "セージグリーン",
+          "reason": "乾燥したハーブの色。彩度が低く現代的なインテリアに馴染み、穏やかな安らぎを与える。"
+        },
+        "teal": {
+          "name": "ティール",
+          "reason": "青（冷静）と緑（調和）の中間色。バランスが良く、洗練されたエキゾチックな美しさがある。"
+        },
+        "coral": {
+          "name": "コーラル",
+          "reason": "珊瑚の色。ピンクの優しさとオレンジの元気さを併せ持ち、親しみやすさと多幸感を与える。"
+        },
+        "sunset_orange": {
+          "name": "サンセットオレンジ",
+          "reason": "夕焼けの色。一日の終わりを告げるノスタルジーと、温かい感情を呼び起こす。"
+        },
+        "cherry_blossom": {
+          "name": "サクラピンク",
+          "reason": "桜の花びらの色。儚さと春の訪れを感じさせ、優しい気持ちにさせる。"
+        },
+        "mustard": {
+          "name": "マスタードイエロー",
+          "reason": "落ち着いた黄色。刺激が少なく、レトロで温かみのある豊かさを感じさせる。"
+        },
+        "terracotta": {
+          "name": "テラコッタ",
+          "reason": "素焼きの陶器や大地の色。自然由来の温もりがあり、安定感と安心感を与える。"
+        },
+        "royal_purple": {
+          "name": "ロイヤルパープル",
+          "reason": "王族の色。高貴さ、神秘性、芸術的な感性を刺激する。"
+        },
+        "lavender": {
+          "name": "ラベンダー",
+          "reason": "紫の気品と白の清潔感を合わせた色。香りを連想させ、優雅なリラックス空間を演出する。"
+        },
+        "champagne": {
+          "name": "シャンパンゴールド",
+          "reason": "祝杯のシャンパンのような淡い金色。派手すぎない輝きが、上品な高級感を演出する。"
+        },
+        "crimson": {
+          "name": "クリムゾン",
+          "reason": "深紅。純粋な赤よりも深みがあり、情熱的でありながら大人びたドラマチックな印象を与える。"
+        },
+        "indigo": {
+          "name": "インディゴ",
+          "reason": "藍色。夜明け前の空の色でもあり、深い精神性と集中力を高める美しさがある。"
+        },
+        "charcoal_gray": {
+          "name": "チャコールグレー",
+          "reason": "黒ほど強すぎず、知的で洗練された印象。他のどの色とも調和する。"
+        },
+        "robin_egg_blue": {
+          "name": "ティファニーブルー",
+          "reason": "コマドリの卵の色。贈り物や特別な日のワクワク感を想起させる。"
+        },
+        "sand_beige": {
+          "name": "サンドベージュ",
+          "reason": "砂浜の色。漂白された白よりも目に優しく、ナチュラルでオーガニックな清潔感がある。"
+        },
+        "slate_blue": {
+          "name": "スレートブルー",
+          "reason": "灰色がかった青紫。都会的でクールな印象がありつつ、哀愁を含んだ大人っぽい美しさがある。"
+        },
+        "peach_fuzz": {
+          "name": "ピーチファズ",
+          "reason": "桃の産毛のような淡いオレンジピンク。人と人とのつながりや、柔らかさを感じさせる。"
+        }
+      }
+    },
+    "en": {
+      "categories": {
+        "nature_serenity": {
+          "name": "Nature & Serenity",
+          "description": "Colors associated with essential elements like the sea, sky, and plants, instinctively preferred for their calming effect."
+        },
+        "warmth_energy": {
+          "name": "Warmth & Energy",
+          "description": "Colors reminding of the sun, fruits, and flowers, eliciting positive emotions."
+        },
+        "elegance_mystery": {
+          "name": "Elegance & Mystery",
+          "description": "Colors that were historically rare or evoke the extraordinary are often perceived as beautiful."
+        },
+        "modern_nuance": {
+          "name": "Modern & Nuance",
+          "description": "Simple yet deep colors that are particularly preferred in modern design."
+        }
+      },
+      "colors": {
+        "sky_blue": {
+          "name": "Sky Blue",
+          "reason": "The color of a clear sky. It evokes a sense of openness and freedom, helping to reduce stress."
+        },
+        "midnight_blue": {
+          "name": "Midnight Blue",
+          "reason": "The color of the deep night sky or sea. It brings silence, intelligence, and mental calm."
+        },
+        "emerald_green": {
+          "name": "Emerald Green",
+          "reason": "The color of gemstones and rich forests. Symbolizing vitality and rebirth, it is gentle on the eyes and highly relaxing."
+        },
+        "sage_green": {
+          "name": "Sage Green",
+          "reason": "The color of dried herbs. Its low saturation fits well with modern interiors, providing gentle peace."
+        },
+        "teal": {
+          "name": "Teal",
+          "reason": "An intermediate color between blue (calm) and green (harmony). It possesses a balanced, sophisticated, and exotic beauty."
+        },
+        "coral": {
+          "name": "Coral",
+          "reason": "The color of coral. Combining the gentleness of pink and the energy of orange, it imparts friendliness and euphoria."
+        },
+        "sunset_orange": {
+          "name": "Sunset Orange",
+          "reason": "The color of the sunset. It evokes nostalgia for the end of the day and warm emotions."
+        },
+        "cherry_blossom": {
+          "name": "Cherry Blossom",
+          "reason": "The color of cherry blossom petals. It suggests ephemerality and the arrival of spring, creating a gentle feeling."
+        },
+        "mustard": {
+          "name": "Mustard",
+          "reason": "A muted yellow. Less stimulating than bright yellow, it offers a retro warmth and a sense of richness."
+        },
+        "terracotta": {
+          "name": "Terracotta",
+          "reason": "The color of unglazed pottery or earth. It has a natural warmth, providing stability and a sense of security."
+        },
+        "royal_purple": {
+          "name": "Royal Purple",
+          "reason": "The color associated with royalty. It stimulates nobility, mystery, and artistic sensibility."
+        },
+        "lavender": {
+          "name": "Lavender",
+          "reason": "Combines the elegance of purple with the cleanliness of white. Associated with scent, it creates a graceful relaxing space."
+        },
+        "champagne": {
+          "name": "Champagne",
+          "reason": "Pale gold like celebratory champagne. Its subtle shine creates an elegant sense of luxury."
+        },
+        "crimson": {
+          "name": "Crimson",
+          "reason": "Deep red. Deeper than pure red, it gives a passionate yet mature and dramatic impression."
+        },
+        "indigo": {
+          "name": "Indigo",
+          "reason": "Indigo. The color of the pre-dawn sky, it enhances deep spirituality and concentration."
+        },
+        "charcoal_gray": {
+          "name": "Charcoal Gray",
+          "reason": "Not as strong as black, giving an intellectual and sophisticated impression. It harmonizes with any other color."
+        },
+        "robin_egg_blue": {
+          "name": "Robin Egg Blue",
+          "reason": "The color of a robin's egg. It evokes the excitement of gifts and special occasions."
+        },
+        "sand_beige": {
+          "name": "Sand Beige",
+          "reason": "The color of a sandy beach. Gentler on the eyes than bleached white, it offers a natural, organic cleanliness."
+        },
+        "slate_blue": {
+          "name": "Slate Blue",
+          "reason": "Grayish blue-purple. It gives an urban and cool impression, with a mature beauty containing a touch of melancholy."
+        },
+        "peach_fuzz": {
+          "name": "Peach Fuzz",
+          "reason": "Pale orange-pink like peach fuzz. It evokes human connection and a sense of softness."
+        }
+      }
+    }
+  }
+}

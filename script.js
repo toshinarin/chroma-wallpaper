@@ -117,4 +117,74 @@ document.addEventListener('DOMContentLoaded', () => {
         link.href = canvas.toDataURL('image/png');
         link.click();
     }
+    // Color Catalog Logic
+    const categoryTabs = document.getElementById('categoryTabs');
+    const catalogGrid = document.getElementById('catalogGrid');
+
+    // Determine language (default to en, switch to ja if browser is ja)
+    const lang = navigator.language.startsWith('ja') ? 'ja' : 'en';
+
+    fetch('colors.json')
+        .then(response => response.json())
+        .then(data => {
+            initCatalog(data);
+        })
+        .catch(err => {
+            catalogGrid.innerHTML = '<div class="loading-spinner">Failed to load colors.</div>';
+            console.error('Error loading colors:', err);
+        });
+
+    function initCatalog(data) {
+        const structure = data.structure;
+        const content = data.content[lang];
+        let activeCategory = structure.categories[0].id;
+
+        // Render Tabs
+        renderTabs(structure.categories, content.categories, activeCategory);
+        renderCards(structure.categories, content.colors, activeCategory);
+
+        // Tab Switching Logic
+        window.switchCategory = (categoryId) => {
+            activeCategory = categoryId;
+            renderTabs(structure.categories, content.categories, activeCategory);
+            renderCards(structure.categories, content.colors, activeCategory);
+        };
+    }
+
+    function renderTabs(categories, contentCategories, activeId) {
+        categoryTabs.innerHTML = categories.map(cat => {
+            const info = contentCategories[cat.id];
+            const isActive = cat.id === activeId ? 'active' : '';
+            return `<button class="tab-btn ${isActive}" onclick="switchCategory('${cat.id}')">${info.name}</button>`;
+        }).join('');
+    }
+
+    function renderCards(categories, contentColors, activeId) {
+        const category = categories.find(c => c.id === activeId);
+        if (!category) return;
+
+        catalogGrid.innerHTML = category.colors.map(color => {
+            const info = contentColors[color.id];
+            return `
+                <div class="color-card" onclick="selectColor('${color.hex}')">
+                    <div class="card-swatch" style="background-color: ${color.hex}"></div>
+                    <div class="card-content">
+                        <h3>${info.name}</h3>
+                        <p>${info.reason}</p>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    // Global selector function
+    window.selectColor = (hex) => {
+        state.color = hex;
+        colorPicker.value = hex;
+        colorHex.value = hex;
+        updatePreview();
+
+        // Scroll to top smoothly
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 });
